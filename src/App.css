@@ -1304,3 +1304,197 @@
     margin-top: 35px;
   }
 }
+
+/* =========================
+   COMPANY — ZYNEXSAA
+   ========================= */
+
+/* =========================
+   COMPANY — ZYNEXSAA
+   ========================= */
+
+.company-section {
+  position: relative;
+  overflow: hidden;
+  padding: 130px 0 0;
+  border-top: 1px solid var(--border);
+  background:
+    radial-gradient(circle at 70% 35%, rgba(139, 92, 246, 0.045), transparent 30rem),
+    #07070a;
+}
+
+.company-closing {
+  display: grid;
+  grid-template-columns: 0.55fr 1.45fr;
+  column-gap: 70px;
+  row-gap: 55px;
+  padding: 100px 0 130px;
+}
+
+.company-kicker {
+  margin: 10px 0 0;
+  color: #686772;
+  font-size: 0.64rem;
+  font-weight: 600;
+  letter-spacing: 0.26em;
+}
+
+.company-closing h2 {
+  margin: 0;
+  max-width: 900px;
+
+  font-size: clamp(3.4rem, 6.5vw, 7rem);
+  line-height: 0.95;
+  font-weight: 520;
+  letter-spacing: -0.065em;
+}
+
+.company-closing h2 span {
+  display: block;
+  color: #777681;
+}
+
+.company-closing-copy {
+  grid-column: 2;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 60px;
+
+  padding-top: 45px;
+  border-top: 1px solid var(--border);
+}
+
+.company-closing-copy > p {
+  width: min(560px, 100%);
+  margin: 0;
+
+  color: #8d8c98;
+  font-size: 0.95rem;
+  line-height: 1.8;
+}
+
+.company-closing-copy > a {
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  gap: 16px;
+
+  padding-bottom: 7px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.14);
+
+  color: #d5d4dc;
+  font-size: 0.76rem;
+  letter-spacing: 0.04em;
+
+  transition:
+    color 180ms ease,
+    border-color 180ms ease;
+}
+
+.company-closing-copy > a:hover {
+  color: #fff;
+  border-color: rgba(139, 92, 246, 0.65);
+}
+
+/* FOOTER */
+
+.site-footer {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 55px;
+
+  padding: 55px 0 42px;
+  border-top: 1px solid var(--border);
+}
+
+.footer-brand strong {
+  display: block;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.24em;
+}
+
+.footer-brand p {
+  margin: 13px 0 0;
+  color: #5e5d68;
+  font-size: 0.72rem;
+}
+
+.site-footer nav {
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+}
+
+.site-footer nav a {
+  color: #73727d;
+  font-size: 0.61rem;
+  font-weight: 600;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+  transition: color 180ms ease;
+}
+
+.site-footer nav a:hover {
+  color: #fff;
+}
+
+.footer-meta {
+  grid-column: 1 / -1;
+
+  display: flex;
+  justify-content: space-between;
+
+  padding-top: 28px;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+
+  color: #494852;
+  font-size: 0.56rem;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+}
+
+@media (max-width: 900px) {
+  .company-section {
+    padding-top: 100px;
+  }
+
+  .company-closing {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    padding: 75px 0 100px;
+  }
+
+  .company-closing-copy {
+    grid-column: 1;
+  }
+}
+
+@media (max-width: 600px) {
+  .company-closing h2 {
+    font-size: clamp(3rem, 14vw, 4.6rem);
+  }
+
+  .company-closing-copy {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+  }
+
+  .site-footer {
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+
+  .site-footer nav {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .footer-meta {
+    flex-direction: column;
+    gap: 10px;
+  }
+}

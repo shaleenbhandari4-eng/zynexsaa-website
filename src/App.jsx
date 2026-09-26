@@ -290,9 +290,56 @@ function App() {
   </div>
 </section>
 
-      <section className="placeholder-section" id="company">
-        <p>03 / COMPANY</p>
-      </section>
+      <section className="company-section" id="company">
+  <div className="section-container">
+    <div className="section-label">
+      <span>03</span>
+      <span>/</span>
+      <span>Zynexsaa</span>
+    </div>
+
+    <div className="company-closing">
+      <p className="company-kicker">ZYNEXSAA</p>
+
+      <h2>
+        Born in Nepal.
+        <span>Built for everywhere.</span>
+      </h2>
+
+      <div className="company-closing-copy">
+        <p>
+          We build intelligent systems around one principle: technology
+          should integrate into people's environments — not force people
+          to reorganize their lives around technology.
+        </p>
+
+        <a href="mailto:admin@zynexsaa.com">
+          admin@zynexsaa.com
+          <span aria-hidden="true">↗</span>
+        </a>
+      </div>
+    </div>
+
+    <footer className="site-footer">
+      <div className="footer-brand">
+        <strong>ZYNEXSAA</strong>
+        <p>Building intelligence that integrates.</p>
+      </div>
+
+      <nav aria-label="Footer navigation">
+        <a href="#ciel">Ciel</a>
+        <a href="#vision">Vision</a>
+        <a href="#home">Top ↑</a>
+      </nav>
+
+      <div className="footer-meta">
+        <span>© 2026 Zynexsaa</span>
+        <span>Nepal → Everywhere</span>
+      </div>
+        </footer>
+  </div>
+</section>
+
     </main>
   )
 }
