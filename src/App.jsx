@@ -64,9 +64,116 @@ function App() {
         </a>
       </section>
 
-      <section className="placeholder-section" id="ciel">
-        <p>01 / CIEL</p>
-      </section>
+      <section className="ciel-section" id="ciel">
+  <div className="section-container">
+    <div className="section-label">
+      <span>01</span>
+      <span>/</span>
+      <span>Flagship System</span>
+    </div>
+
+    <div className="ciel-intro">
+      <div className="ciel-heading">
+        <p className="ciel-status">
+          <span className="status-dot" />
+          Ciel Core
+        </p>
+
+        <h2>CIEL</h2>
+      </div>
+
+      <div className="ciel-copy">
+        <h3>
+          Intelligence shouldn't
+          <span> live in a box.</span>
+        </h3>
+
+        <p>
+          Ciel is an AI command center designed to understand intent,
+          connect with applications and devices, and turn authorized
+          requests into controlled actions.
+        </p>
+      </div>
+    </div>
+
+    <div className="ciel-system">
+      <div className="system-stage">
+        <div className="system-lines" aria-hidden="true">
+          <span className="line line-top" />
+          <span className="line line-left" />
+          <span className="line line-right" />
+          <span className="line line-bottom" />
+        </div>
+
+        <div className="system-node ciel-node">
+          <span className="node-index">00</span>
+          <span className="node-core" />
+          <strong>Ciel</strong>
+          <small>Intelligence Layer</small>
+        </div>
+
+        <div className="system-node applications-node">
+          <span className="node-index">01</span>
+          <span className="node-point" />
+          <strong>Applications</strong>
+          <small>Connected Tools</small>
+        </div>
+
+        <div className="system-node devices-node">
+          <span className="node-index">02</span>
+          <span className="node-point" />
+          <strong>Devices</strong>
+          <small>Connected Environments</small>
+        </div>
+
+        <div className="system-node workflows-node">
+          <span className="node-index">03</span>
+          <span className="node-point" />
+          <strong>Workflows</strong>
+          <small>Controlled Execution</small>
+        </div>
+      </div>
+    </div>
+
+    <div className="ciel-principles">
+      <div className="principle">
+        <span>01</span>
+        <strong>Understand</strong>
+        <p>Interpret what the user intends to accomplish.</p>
+      </div>
+
+      <div className="principle">
+        <span>02</span>
+        <strong>Plan</strong>
+        <p>Translate intent into explicit, structured actions.</p>
+      </div>
+
+      <div className="principle">
+        <span>03</span>
+        <strong>Authorize</strong>
+        <p>Keep meaningful actions under user control.</p>
+      </div>
+
+      <div className="principle">
+        <span>04</span>
+        <strong>Execute</strong>
+        <p>Act through connected capabilities and environments.</p>
+      </div>
+    </div>
+
+    <div className="ciel-footer">
+      <p>
+        One intelligence layer.
+        <span> An expanding ecosystem.</span>
+      </p>
+
+      <a href="#vision">
+        Explore the evolution
+        <span aria-hidden="true">↓</span>
+      </a>
+    </div>
+  </div>
+</section>
 
       <section className="placeholder-section" id="vision">
         <p>02 / VISION</p>
