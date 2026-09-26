@@ -941,3 +941,366 @@
     animation: none;
   }
 }
+
+/* =========================
+   VISION — CIEL EVOLUTION
+   ========================= */
+
+.vision-section {
+  position: relative;
+  overflow: hidden;
+  padding: 150px 0 140px;
+  border-top: 1px solid var(--border);
+  background:
+    radial-gradient(circle at 76% 28%, rgba(139, 92, 246, 0.07), transparent 30rem),
+    radial-gradient(circle at 20% 72%, rgba(79, 140, 255, 0.045), transparent 28rem),
+    #050507;
+}
+
+.vision-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.012) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.012) 1px, transparent 1px);
+  background-size: 80px 80px;
+
+  mask-image: linear-gradient(
+    to bottom,
+    transparent,
+    black 18%,
+    black 82%,
+    transparent
+  );
+}
+
+.vision-header {
+  display: grid;
+  grid-template-columns: 0.7fr 1.3fr;
+  column-gap: 80px;
+  row-gap: 30px;
+  padding: 100px 0 120px;
+}
+
+.vision-kicker {
+  margin: 8px 0 0;
+  color: #777681;
+  font-size: 0.66rem;
+  font-weight: 600;
+  letter-spacing: 0.24em;
+}
+
+.vision-header h2 {
+  margin: 0;
+  max-width: 850px;
+
+  font-size: clamp(3.1rem, 6vw, 6.5rem);
+  line-height: 0.98;
+  font-weight: 520;
+  letter-spacing: -0.06em;
+}
+
+.vision-header h2 span {
+  display: block;
+  color: #777681;
+}
+
+.vision-intro {
+  grid-column: 2;
+  width: min(610px, 100%);
+  margin: 8px 0 0;
+
+  color: #92919e;
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+/* EVOLUTION TRACK */
+
+.evolution-track {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0;
+  padding-top: 80px;
+}
+
+.evolution-line {
+  position: absolute;
+  top: 91px;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.evolution-progress {
+  display: block;
+  width: 16.666%;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    rgba(139, 92, 246, 0.25),
+    rgba(139, 92, 246, 0.95)
+  );
+  box-shadow: 0 0 20px rgba(139, 92, 246, 0.4);
+}
+
+.evolution-stage {
+  position: relative;
+  min-height: 430px;
+  padding: 70px 48px 42px 0;
+  border-right: 1px solid var(--border);
+}
+
+.evolution-stage + .evolution-stage {
+  padding-left: 48px;
+}
+
+.evolution-stage:last-child {
+  padding-right: 0;
+  border-right: 0;
+}
+
+.evolution-marker {
+  position: absolute;
+  z-index: 3;
+  top: 5px;
+  left: 0;
+
+  display: grid;
+  place-items: center;
+
+  width: 14px;
+  height: 14px;
+  border: 1px solid #474750;
+  border-radius: 50%;
+  background: #07070a;
+}
+
+.evolution-stage + .evolution-stage .evolution-marker {
+  left: 48px;
+}
+
+.evolution-marker > span {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: #555560;
+}
+
+.evolution-current .evolution-marker {
+  border-color: rgba(166, 139, 255, 0.7);
+  box-shadow:
+    0 0 0 7px rgba(139, 92, 246, 0.045),
+    0 0 24px rgba(139, 92, 246, 0.22);
+}
+
+.evolution-current .marker-core {
+  background: #b7a4ff;
+  box-shadow: 0 0 12px rgba(139, 92, 246, 1);
+}
+
+.evolution-meta {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+
+  color: #5f5e69;
+  font-size: 0.58rem;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+.evolution-current .evolution-meta span:last-child {
+  color: #9484cc;
+}
+
+.evolution-stage h3 {
+  margin: 70px 0 0;
+
+  color: #b0afb9;
+  font-size: clamp(2.3rem, 4vw, 4.5rem);
+  line-height: 1;
+  font-weight: 500;
+  letter-spacing: -0.055em;
+}
+
+.evolution-current h3 {
+  color: #f1f0f5;
+}
+
+.evolution-stage > p {
+  max-width: 350px;
+  min-height: 120px;
+  margin: 30px 0 0;
+
+  color: #74737e;
+  font-size: 0.82rem;
+  line-height: 1.75;
+}
+
+.evolution-current > p {
+  color: #92919d;
+}
+
+.evolution-state {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+
+  margin-top: 38px;
+
+  color: #62616d;
+  font-size: 0.58rem;
+  font-weight: 600;
+  letter-spacing: 0.17em;
+  text-transform: uppercase;
+}
+
+.evolution-current .evolution-state {
+  color: #aaa1ca;
+}
+
+.state-dot {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #9f85ff;
+  box-shadow: 0 0 12px rgba(139, 92, 246, 0.9);
+}
+
+/* MANIFESTO */
+
+.vision-manifesto {
+  position: relative;
+  margin-top: 120px;
+  padding: 90px 0 40px;
+  border-top: 1px solid var(--border);
+}
+
+.manifesto-index {
+  margin: 0 0 70px;
+  color: #4f4e58;
+  font-size: 0.58rem;
+  letter-spacing: 0.2em;
+}
+
+.vision-manifesto blockquote {
+  width: min(1000px, 100%);
+  margin: 0;
+
+  font-size: clamp(3rem, 6vw, 6.5rem);
+  line-height: 0.98;
+  font-weight: 500;
+  letter-spacing: -0.06em;
+}
+
+.vision-manifesto blockquote span {
+  display: block;
+  color: #73727d;
+}
+
+.manifesto-copy {
+  width: min(520px, 100%);
+  margin: 50px 0 0 auto;
+
+  color: #92919d;
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+/* VISION RESPONSIVE */
+
+@media (max-width: 900px) {
+  .vision-section {
+    padding: 110px 0 100px;
+  }
+
+  .vision-header {
+    grid-template-columns: 1fr;
+    gap: 35px;
+    padding: 70px 0 90px;
+  }
+
+  .vision-intro {
+    grid-column: 1;
+  }
+
+  .evolution-track {
+    grid-template-columns: 1fr;
+    padding-top: 20px;
+  }
+
+  .evolution-line {
+    top: 20px;
+    bottom: 0;
+    left: 6px;
+    right: auto;
+    width: 1px;
+    height: auto;
+  }
+
+  .evolution-progress {
+    width: 1px;
+    height: 24%;
+    background: linear-gradient(
+      to bottom,
+      rgba(139, 92, 246, 0.9),
+      rgba(139, 92, 246, 0.2)
+    );
+  }
+
+  .evolution-stage,
+  .evolution-stage + .evolution-stage {
+    min-height: auto;
+    padding: 55px 0 80px 48px;
+    border-right: 0;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .evolution-stage:last-child {
+    border-bottom: 0;
+  }
+
+  .evolution-marker,
+  .evolution-stage + .evolution-stage .evolution-marker {
+    top: 14px;
+    left: 0;
+  }
+
+  .evolution-stage h3 {
+    margin-top: 48px;
+  }
+
+  .evolution-stage > p {
+    min-height: auto;
+  }
+
+  .vision-manifesto {
+    margin-top: 70px;
+  }
+}
+
+@media (max-width: 600px) {
+  .vision-header h2,
+  .vision-manifesto blockquote {
+    font-size: clamp(2.7rem, 13vw, 4.3rem);
+  }
+
+  .vision-manifesto {
+    padding-top: 65px;
+  }
+
+  .manifesto-index {
+    margin-bottom: 45px;
+  }
+
+  .manifesto-copy {
+    margin-top: 35px;
+  }
+}

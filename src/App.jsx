@@ -175,9 +175,120 @@ function App() {
   </div>
 </section>
 
-      <section className="placeholder-section" id="vision">
-        <p>02 / VISION</p>
-      </section>
+      <section className="vision-section" id="vision">
+  <div className="section-container">
+    <div className="section-label">
+      <span>02</span>
+      <span>/</span>
+      <span>Evolution</span>
+    </div>
+
+    <div className="vision-header">
+      <p className="vision-kicker">THE CIEL ROADMAP</p>
+
+      <h2>
+        Intelligence that
+        <span> evolves with its environment.</span>
+      </h2>
+
+      <p className="vision-intro">
+        Ciel is being built as an evolving command-center architecture:
+        beginning with a secure foundation and expanding toward deeper
+        intelligence, broader integration and user-governed orchestration.
+      </p>
+    </div>
+
+    <div className="evolution-track">
+      <div className="evolution-line" aria-hidden="true">
+        <span className="evolution-progress" />
+      </div>
+
+      <article className="evolution-stage evolution-current">
+        <div className="evolution-marker">
+          <span className="marker-core" />
+        </div>
+
+        <div className="evolution-meta">
+          <span>01</span>
+          <span>Current Development</span>
+        </div>
+
+        <h3>Ciel Core</h3>
+
+        <p>
+          The secure foundation: understanding requests, structured planning,
+          permission-aware actions and controlled execution across connected
+          capabilities.
+        </p>
+
+        <div className="evolution-state">
+          <span className="state-dot" />
+          Foundation
+        </div>
+      </article>
+
+      <article className="evolution-stage">
+        <div className="evolution-marker">
+          <span />
+        </div>
+
+        <div className="evolution-meta">
+          <span>02</span>
+          <span>Future Evolution</span>
+        </div>
+
+        <h3>Ciel Sage</h3>
+
+        <p>
+          A future expansion toward deeper multi-step intelligence, durable
+          workflows, broader integrations and more capable coordination
+          between tools and services.
+        </p>
+
+        <div className="evolution-state">
+          Expansion
+        </div>
+      </article>
+
+      <article className="evolution-stage">
+        <div className="evolution-marker">
+          <span />
+        </div>
+
+        <div className="evolution-meta">
+          <span>03</span>
+          <span>Long-Term Vision</span>
+        </div>
+
+        <h3>Ciel Sovereign</h3>
+
+        <p>
+          The long-term vision for a personal AI command center spanning
+          devices, environments and services while keeping delegation and
+          authority governed by the user.
+        </p>
+
+        <div className="evolution-state">
+          Vision
+        </div>
+      </article>
+    </div>
+
+    <div className="vision-manifesto">
+      <p className="manifesto-index">Z / 02</p>
+
+      <blockquote>
+        <span>The interface may change.</span>
+        The principle doesn't.
+      </blockquote>
+
+      <p className="manifesto-copy">
+        Intelligence should adapt to the environment — not force the
+        environment to adapt to it.
+      </p>
+    </div>
+  </div>
+</section>
 
       <section className="placeholder-section" id="company">
         <p>03 / COMPANY</p>
