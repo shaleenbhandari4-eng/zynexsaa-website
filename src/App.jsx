@@ -4,10 +4,10 @@ function App() {
   return (
     <main className="site-shell">
       <header className="navbar">
-        <a className="brand" href="#home" aria-label="Zynexsaa home">
-          ZYNEXSAA
-        </a>
-
+       <a className="brand" href="#home" aria-label="Zynexsaa home">
+  <img src="/zynexsaa-icon.png" alt="" aria-hidden="true" />
+  <span>ZYNEXSAA</span>
+</a>
         <nav className="nav-links" aria-label="Primary navigation">
           <a href="#ciel">Ciel</a>
           <a href="#vision">Vision</a>
@@ -323,7 +323,7 @@ function App() {
     <footer className="site-footer">
       <div className="footer-brand">
         <strong>ZYNEXSAA</strong>
-        <p>Building intelligence that integrates.</p>
+        <p>Zynexsaa Artificial Intelligence And Technology</p>
       </div>
 
       <nav aria-label="Footer navigation">
@@ -333,7 +333,7 @@ function App() {
       </nav>
 
       <div className="footer-meta">
-        <span>© 2026 Zynexsaa</span>
+        <span>© 2026 Zynexsaa Artificial Intelligence And Technology</span>
         <span>Nepal → Everywhere</span>
       </div>
         </footer>
