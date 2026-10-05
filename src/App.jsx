@@ -9,7 +9,7 @@ function App() {
   <span>ZYNEXSAA</span>
 </a>
         <nav className="nav-links" aria-label="Primary navigation">
-          <a href="#ciel">Ciel</a>
+          <a href="https://ciel.zynexsaa.com">Ciel</a>
           <a href="#vision">Vision</a>
           <a href="#company">Company</a>
         </nav>
@@ -47,7 +47,7 @@ function App() {
           </p>
 
           <div className="hero-actions">
-            <a className="primary-button" href="#ciel">
+            <a className="primary-button" href="https://ciel.zynexsaa.com">
               Explore Ciel
               <span aria-hidden="true">↗</span>
             </a>
@@ -327,7 +327,7 @@ function App() {
       </div>
 
       <nav aria-label="Footer navigation">
-        <a href="#ciel">Ciel</a>
+        <a href="https://ciel.zynexsaa.com">Ciel</a>
         <a href="#vision">Vision</a>
         <a href="#home">Top ↑</a>
       </nav>
